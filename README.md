@@ -9,5 +9,6 @@ and also to have a site serve as my resume.
 - eslint rules
 - Cypress
 
-***Libraries/technologies I would like to add to the project: ***
+***Libraries/technologies I would like to use in the project: ***
 - Material UI (template)
+- Deploy to Netlify

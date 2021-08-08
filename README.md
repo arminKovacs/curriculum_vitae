@@ -5,10 +5,10 @@ and also to have a site serve as my resume.
 
 **Libraries/technologies in use in the project:**
 - React js
+- react-scroll-parallax
 - Typescript
 - eslint rules
 - Cypress
 
 **Libraries/technologies I would like to use in the project:**
-- Material UI (template)
 - Deploy to Netlify

@@ -1,6 +1,6 @@
 import React from 'react'
 import { ParallaxBanner } from 'react-scroll-parallax'
-import image from '../images/pexels-eberhard-grossgasteiger-844297.jpg'
+import image from '../images/iceberg.jpg'
 
 const ParallaxImage = () => {
   return (
@@ -8,12 +8,12 @@ const ParallaxImage = () => {
       layers={[
         {
           image: image,
-          amount: 1,
+          amount: 0.5,
           children: 'img',
         },
       ]}
       style={{
-        height: '300px',
+        height: '500px',
       }}
     />
   )

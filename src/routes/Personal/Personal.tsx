@@ -1,14 +1,14 @@
 import { Typography } from '@material-ui/core'
 import React from 'react'
 
-const TechExperience = () => {
+const Personal = () => {
   return (
     <div style={{ height: 1000 }}>
-      <Typography variant="h3" id="tech">
-        Tech experience
+      <Typography variant="h3" id="personal">
+        Personal info
       </Typography>
     </div>
   )
 }
 
-export default TechExperience
+export default Personal

@@ -13,7 +13,7 @@ const WelcomePage = () => {
   const classes = useStyles()
 
   return (
-    <div style={{ height: 1000 }}>
+    <div style={{ height: 1000 }} id="welcome">
       <Typography variant="h3">
         Welcome to my site!
       </Typography>

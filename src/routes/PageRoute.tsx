@@ -1,5 +1,5 @@
-import { Box } from '@material-ui/core'
 import React from 'react'
+import { Box } from '@material-ui/core'
 import { Switch, Route } from 'react-router-dom'
 import { ParallaxBannerImage } from '../components'
 import StyledDivider from '../components/StyledDivider'
@@ -8,8 +8,11 @@ import Links from './Links/Links'
 import Personal from './Personal/Personal'
 import TechExperience from './TechExperience/TechExperience'
 import WelcomePage from './WelcomePage/WelcomePage'
+import { animateScroll } from 'react-scroll'
+import ScrollToTopButton from '../components/ScrollToTopButton'
 
 const PageRoute = () => {
+
   return (
     <Switch>
       <Route exact path="/">
@@ -29,6 +32,7 @@ const PageRoute = () => {
         <StyledDivider />
         <Links />
         <StyledDivider flip />
+        <ScrollToTopButton />
       </Route>
     </Switch>
   )

@@ -1,7 +1,8 @@
 import { Box } from '@material-ui/core'
 import React from 'react'
 import { Switch, Route } from 'react-router-dom'
-import { ParallaxBannerImage, ParallaxImegaSideEnter } from '../components'
+import { ParallaxBannerImage } from '../components'
+import TechExperience from './TechExperience/TechExperience'
 import WelcomePage from './WelcomePage/WelcomePage'
 
 const PageRoute = () => {
@@ -11,7 +12,7 @@ const PageRoute = () => {
         <ParallaxBannerImage />
         <Box my={2} />
         <WelcomePage />
-        <ParallaxImegaSideEnter xValues={[-90, 60]} />
+        <TechExperience />
       </Route>
     </Switch>
   )

@@ -6,6 +6,7 @@ and also to have a site serve as my resume.
 **Libraries/technologies in use in the project:**
 - React js
 - react-scroll-parallax
+- react-scroll
 - Typescript
 - eslint rules
 - Cypress

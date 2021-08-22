@@ -5,7 +5,7 @@ import React from 'react'
 const WelcomePage = () => {
   return (
     <div style={{ height: 1000 }}>
-      <Typography variant="h1" style={{ textAlign: 'center' }}>
+      <Typography variant="h3" style={{ textAlign: 'center' }}>
         Welcome to my site!
       </Typography>
       <Button

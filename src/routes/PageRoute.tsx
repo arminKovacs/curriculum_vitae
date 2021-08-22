@@ -2,6 +2,7 @@ import { Box } from '@material-ui/core'
 import React from 'react'
 import { Switch, Route } from 'react-router-dom'
 import { ParallaxBannerImage } from '../components'
+import StyledDivider from '../components/StyledDivider'
 import TechExperience from './TechExperience/TechExperience'
 import WelcomePage from './WelcomePage/WelcomePage'
 
@@ -12,6 +13,8 @@ const PageRoute = () => {
         <ParallaxBannerImage />
         <Box my={2} />
         <WelcomePage />
+        <StyledDivider flip />
+        <StyledDivider />
         <TechExperience />
       </Route>
     </Switch>

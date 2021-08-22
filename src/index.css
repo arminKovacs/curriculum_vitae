@@ -13,3 +13,22 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.tilt {
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.tilt svg {
+  position: relative;
+  display: block;
+  width: calc(134% + 1.3px);
+  height: 229px;
+}
+
+.tilt .shape-fill {
+  fill: #FFFFFF;
+}

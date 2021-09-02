@@ -1,0 +1,13 @@
+{
+  "welcome_title" : "Welcome to my site!",
+
+  "job_xp_button_label" : "Job Experiences",
+  "technologies_button_label" : "Used technologies",
+  "personal_info_button_label" : "Personal information",
+  "links_button_label" : "Links",
+
+  "job_xp_title" : "Job Experiences",
+  "technologies_title" : "Used technologies",
+  "personal_info_title" : "Personal information",
+  "links_title" : "Links"
+}

@@ -3,7 +3,7 @@
 The purpose of this project is to showcase some of my skills building a frontend only React application 
 and also to have a site serve as my resume.
 
-**Libraries/technologies in use in the project:**
+**Libraries/technologies used in the project:**
 - React js
 - react-scroll-parallax
 - react-scroll

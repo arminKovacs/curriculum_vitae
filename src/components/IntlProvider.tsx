@@ -13,12 +13,12 @@ const fetchMessages = async (language: Language) => {
   try {
     return {
       language,
-      messages: (await import(`messages/${language}.json`)).default,
+      messages: (await import(`../messages/${language}.json`)).default,
     }
   } catch {
     return {
       language: defaultLanguage,
-      messages: (await import(`messages/${defaultLanguage}.json`)).default,
+      messages: (await import(`../messages/${defaultLanguage}.json`)).default,
     }
   }
 }

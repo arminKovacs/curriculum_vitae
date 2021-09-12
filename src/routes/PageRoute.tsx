@@ -1,7 +1,7 @@
 import React from 'react'
 import { Box } from '@material-ui/core'
 import { Switch, Route } from 'react-router-dom'
-import { ParallaxBannerImage, ScrollToTopButton, LanguageChangeButton } from '../components'
+import { ParallaxBannerImage, SpeedialMenuButton } from '../components'
 import StyledDivider from '../components/StyledDivider'
 import JobExperiences from './JobExperiences/JobExperiences'
 import Links from './Links/Links'
@@ -15,7 +15,6 @@ const PageRoute = () => {
     <Switch>
       <Route exact path="/">
         <ParallaxBannerImage />
-        <LanguageChangeButton />
 
         <Box my={2} />
 
@@ -40,7 +39,7 @@ const PageRoute = () => {
         <Links />
         <StyledDivider flip />
 
-        <ScrollToTopButton />
+        <SpeedialMenuButton />
       </Route>
     </Switch>
   )

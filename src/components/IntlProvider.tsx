@@ -33,11 +33,27 @@ const IntlProvider: FC = (props) => {
 
   useEffect(() => { init() }, [init])
 
+  const toggleLanguage = useCallback(async () => {
+    const huState = await fetchMessages('hu' as Language)
+    const enState = await fetchMessages('en' as Language)
+
+    setState(prevState => {
+      if (prevState) {
+        if (prevState.language === 'en') {
+          return huState
+        } else {
+          return enState
+        }
+      }
+      return prevState
+    })
+  }, [])
+
   if (!state) {
     return null
   }
 
-  return <IntlContext.Provider value={{ language: state.language, t }} {...props} />
+  return <IntlContext.Provider value={{ language: state.language, t, toggleLanguage }} {...props} />
 }
 
 export default IntlProvider

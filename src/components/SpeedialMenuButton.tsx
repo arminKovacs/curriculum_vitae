@@ -1,5 +1,5 @@
 import { createStyles, makeStyles, useScrollTrigger, Zoom } from '@material-ui/core'
-import AccessibilityNewIcon from '@material-ui/icons/AccessibilityNew'
+import PersonIcon from '@material-ui/icons/Person'
 import WorkIcon from '@material-ui/icons/Work'
 import BuildIcon from '@material-ui/icons/Build'
 import EmojiPeopleIcon from '@material-ui/icons/EmojiPeople'
@@ -61,14 +61,14 @@ const SpeedDialAnimation: FC = ({ children }) => {
 }
 
 const SpeedialMenuButton = () => {
-  const { t } = useIntl()
+  const { t, toggleLanguage } = useIntl()
   const menuItems = [
     { icon: <LanguageIcon />, name: t('speed_dial_language_tooltip'), actionType: 'language' },
     { icon: <LinkIcon />, name: t('speed_dial_link_tooltip'), actionType: '#links' },
-    { icon: <EmojiPeopleIcon />, name: t('speed_dial_personal_tooltip'), actionType: '#personal' },
+    { icon: <PersonIcon />, name: t('speed_dial_personal_tooltip'), actionType: '#personal' },
     { icon: <BuildIcon />, name: t('speed_dial_tech_tooltip'), actionType: '#tech' },
     { icon: <WorkIcon />, name: t('speed_dial_job_tooltip'), actionType: '#job' },
-    { icon: <AccessibilityNewIcon />, name: t('speed_dial_welcome_tooltip'), actionType: '#welcome' },
+    { icon: <EmojiPeopleIcon />, name: t('speed_dial_welcome_tooltip'), actionType: '#welcome' },
   ]
   const classes = useStyles()
   const [open, setOpen] = useState(false)
@@ -83,7 +83,7 @@ const SpeedialMenuButton = () => {
 
   const handleClick = (event: React.MouseEvent<HTMLDivElement>, actionType: string) => {
     if (actionType === 'language') {
-      console.log('language toggled')
+      toggleLanguage()
     } else {
       const anchor = ((event.target as HTMLDivElement).ownerDocument || document).querySelector(
         actionType,

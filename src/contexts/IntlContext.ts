@@ -11,11 +11,13 @@ export const defaultLanguage: Language = 'en'
 interface Context {
   language: Language
   t: (id: MessageKey) => string | null
+  toggleLanguage: () => void
 }
 
 const IntlContext = createContext<Context>({
   language: defaultLanguage,
   t: () => null,
+  toggleLanguage: () => undefined,
 })
 
 export default IntlContext

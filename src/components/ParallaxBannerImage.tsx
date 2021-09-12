@@ -14,7 +14,7 @@ const ParallaxBannerImage = () => {
         },
       ]}
       style={{
-        height: '400px',
+        height: '375px',
         boxShadow: 'rgb(0 0 0 / 25%) 0px 25px 50px -12px',
       }}
     />

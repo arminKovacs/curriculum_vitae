@@ -2,16 +2,16 @@ import { Typography } from '@material-ui/core'
 import React from 'react'
 import useIntl from '../../hooks/useIntl'
 
-const TechExperience = () => {
+const Links = () => {
   const { t } = useIntl()
 
   return (
     <div style={{ height: 1000 }}>
-      <Typography variant="h3" id="tech">
-        {t('technologies_title')}
+      <Typography variant="h3" id="links">
+        {t('links_title')}
       </Typography>
     </div>
   )
 }
 
-export default TechExperience
+export default Links

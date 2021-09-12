@@ -1,14 +1,43 @@
-import { Box, Button, createStyles, Grid, makeStyles, Typography } from '@material-ui/core'
+import { Box, Button, createStyles, Grid, Grow, makeStyles, Typography, useScrollTrigger } from '@material-ui/core'
 import { Link } from 'react-scroll'
 import useIntl from '../../hooks/useIntl'
-import React from 'react'
+import type { FC } from 'react'
+import image from '../../assets/me.jpg'
 
-const useStyles = makeStyles(() =>
+const useStyles = makeStyles((theme) =>
   createStyles({
     buttonStyle: {
       color: 'white',
     },
+    containerStyle: {
+      margin: 'auto',
+      width: '80%',
+      alignItems: 'center',
+    },
+    imageStyle: {
+      width: '50%',
+      height: 'auto',
+      [theme.breakpoints.down('md')]: {
+        width: '70%',
+      },
+    },
   }))
+
+const TextAnimation: FC = ({ children }) => {
+  const trigger = useScrollTrigger({
+    target: window,
+    disableHysteresis: true,
+    threshold: 250,
+  })
+
+  return (
+    <Grow in={trigger}>
+      <div role="presentation">
+        {children}
+      </div>
+    </Grow>
+  )
+}
 
 const WelcomePage = () => {
   const classes = useStyles()
@@ -50,6 +79,32 @@ const WelcomePage = () => {
           </Button>
         </Grid>
       </Grid>
+
+      <Box my={6}>
+        <Grid item container justifyContent="flex-end" className={classes.containerStyle} spacing={2}>
+
+          <Grid item xs={12} sm={3}>
+            <TextAnimation>
+              <Typography style={{ textAlign: 'center' }}>
+                {t('welcome_intro_text_name')}
+              </Typography>
+              <Box my={2}>
+                <Typography style={{ textAlign: 'center' }}>
+                  {t('welcome_intro_text')}
+                </Typography>
+              </Box>
+            </TextAnimation>
+          </Grid>
+
+          <Grid item xs={12} sm={6}>
+            <TextAnimation>
+              <div>
+                <img src={image} className={classes.imageStyle} />
+              </div>
+            </TextAnimation>
+          </Grid>
+        </Grid>
+      </Box>
     </div>
   )
 }

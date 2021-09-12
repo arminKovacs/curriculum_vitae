@@ -1,5 +1,7 @@
 {
   "welcome_title" : "Üdvözlöm a honlapomon!",
+  "welcome_intro_text_name" : "A nevem Kovács Ármin.",
+  "welcome_intro_text" : "Az oldal azért jött létre, hogy egyfajta portfólió, referencia oldalként szolgáljon recruiter személyeknek akik többet szeretnének tudni a tudásomról, rólam. A navigációs menü segítségével lehet a külnböző szekciók közül választani valamint az Angol és Magyar nyelvet változtatni.",
 
   "job_xp_button_label" : "Szakmai tapasztalat",
   "technologies_button_label" : "Technológiai tapasztalat",

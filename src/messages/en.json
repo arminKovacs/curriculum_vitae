@@ -1,5 +1,7 @@
 {
   "welcome_title" : "Welcome to my site!",
+  "welcome_intro_text_name" : "My name is Ármin Kovács.",
+  "welcome_intro_text" : "The purpose of this website is to serve as a portfolio, reference page for job recruiters wanting to know more about my skills and me. Please feel free to use the navigation menu to jump to specific sections or to toggle between english and hungarian language.",
 
   "job_xp_button_label" : "Job Experiences",
   "technologies_button_label" : "Used technologies",

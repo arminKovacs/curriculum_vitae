@@ -8,6 +8,8 @@ const theme = createTheme({
     ].join(','),
     h3: {
       textAlign: 'center',
+    },
+    allVariants: {
       color: 'white',
     },
   },

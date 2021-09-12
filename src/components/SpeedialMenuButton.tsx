@@ -5,10 +5,11 @@ import BuildIcon from '@material-ui/icons/Build'
 import EmojiPeopleIcon from '@material-ui/icons/EmojiPeople'
 import LinkIcon from '@material-ui/icons/Link'
 import LanguageIcon from '@material-ui/icons/Language'
+import MenuIcon from '@material-ui/icons/Menu'
 import type { Theme } from '@material-ui/core'
 import React, { useState } from 'react'
 import type { FC } from 'react'
-import { SpeedDial, SpeedDialAction, SpeedDialIcon } from '@material-ui/lab'
+import { SpeedDial, SpeedDialAction } from '@material-ui/lab'
 import useIntl from '../hooks/useIntl'
 
 const useStyles = makeStyles((theme: Theme) =>
@@ -22,13 +23,11 @@ const useStyles = makeStyles((theme: Theme) =>
       transform: 'translateZ(0px)',
       flexGrow: 1,
     },
-    exampleWrapper: {
-      position: 'relative',
-      marginTop: theme.spacing(3),
-      height: 380,
-    },
-    radioGroup: {
-      margin: theme.spacing(1, 0),
+    fabStyle: {
+      backgroundColor: 'rgb(145, 134, 114)',
+      '&:hover': {
+        backgroundColor: 'rgb(145 134 114 / 80%)',
+      },
     },
     speedDial: {
       position: 'absolute',
@@ -101,7 +100,10 @@ const SpeedialMenuButton = () => {
       <SpeedDial
         ariaLabel="SpeedDial example"
         className={classes.speedDial}
-        icon={<SpeedDialIcon />}
+        classes={{
+          fab: classes.fabStyle,
+        }}
+        icon={<MenuIcon />}
         onClose={handleClose}
         onOpen={handleOpen}
         open={open}
